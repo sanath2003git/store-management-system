@@ -1,22 +1,47 @@
-import Sidebar from "@/components/Sidebar";
+import DashboardCard from "@/components/DashboardCard";
 
 export default function Dashboard() {
+
   return (
-    <div>
-      <Sidebar />
 
-      <div>
-        <h1>Dashboard</h1>
+    <div className="p-8">
 
-        <p>Welcome to Store Management System</p>
+      <h1 className="text-3xl font-bold mb-8">
 
-        <h2>Total Products :</h2>
-        <p>0</p>
-        <h2>Total Customers :</h2>
-        <p>0</p>
-        <h2>Total Sales :</h2>
-        <p>0</p>
+        Dashboard
+
+      </h1>
+
+      <div className="grid grid-cols-3 gap-6">
+
+        <DashboardCard
+
+          title="Products"
+
+          value="0"
+
+        />
+
+        <DashboardCard
+
+          title="Customers"
+
+          value="0"
+
+        />
+
+        <DashboardCard
+
+          title="Sales"
+
+          value="0"
+
+        />
+
       </div>
+
     </div>
+
   );
+
 }
